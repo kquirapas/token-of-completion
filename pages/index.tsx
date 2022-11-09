@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import {
+  ConnectWallet,
   useAddress,
   useContract,
   useContractMetadata,
@@ -55,12 +56,17 @@ export default function Home() {
         />
         <h1 className="text-3xl font-bold">Become a Web3 Champion</h1>
         <p className="mb-4">Get your token of completion below</p>
-        <button
-          className="w-full max-w-[200px] rounded-xl border-2 border-transparent bg-black-pearl py-4 px-8 font-bold hover:border-white hover:bg-purple-heart"
-          onClick={mint}
-        >
-          {loading ? "Loading..." : "Mint"}
-        </button>
+        <span className="mb-2">
+          <ConnectWallet />
+        </span>
+        {address && (
+          <button
+            className="w-full max-w-[200px] rounded-xl border-2 border-transparent bg-black-pearl py-4 px-8 font-bold hover:border-white hover:bg-purple-heart"
+            onClick={mint}
+          >
+            {loading ? "Loading..." : "Mint"}
+          </button>
+        )}
       </div>
     </main>
   );
