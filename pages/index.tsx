@@ -45,8 +45,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-w-screen flex min-h-screen items-center justify-center bg-hero bg-cover">
-      <div className="flex w-full max-w-[600px] flex-col items-center text-white">
+    <main className="min-w-screen flex min-h-screen items-center justify-center bg-hero bg-cover p-8">
+      <div className="flex w-full max-w-[600px] flex-col items-center text-center text-white">
         <img
           className="mb-16 w-full drop-shadow-2xl"
           ref={cardRef}
@@ -56,7 +56,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Become a Web3 Champion</h1>
         <p className="mb-4">Get your token of completion below</p>
         <button
-          className="w-[200px] rounded-xl border-2 border-transparent bg-black-pearl py-4 px-8 font-bold hover:border-white hover:bg-purple-heart"
+          className="w-full max-w-[200px] rounded-xl border-2 border-transparent bg-black-pearl py-4 px-8 font-bold hover:border-white hover:bg-purple-heart"
           onClick={mint}
         >
           {loading ? "Loading..." : "Mint"}
