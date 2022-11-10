@@ -7,7 +7,6 @@ import {
   useContractMetadata,
 } from "@thirdweb-dev/react";
 import { BigNumber } from "ethers";
-import { useNotify } from "../components/Notify";
 
 const maxDegrees = 90;
 
@@ -20,7 +19,6 @@ export default function Home() {
   );
   const { data: metadata } = useContractMetadata(contract);
   const address = useAddress();
-  const { notify } = useNotify();
 
   useEffect(() => {
     window.onmousemove = function (event) {
@@ -50,7 +48,7 @@ export default function Home() {
       const tx = await contract?.claimTo(address, 1);
       console.log(`tx: ${tx}`);
     } catch (err) {
-      notify("error", String(err));
+      console.log(err);
     }
     setLoading(false);
   };
