@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       sdkOptions={{
         gasless: {
           openzeppelin: {
-            relayerUrl: process.env.NEXT_PUBLIC_RELAYER,
+            relayerUrl: process.env.NEXT_PUBLIC_RELAYER as string,
           },
         },
       }}
