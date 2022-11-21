@@ -44,9 +44,9 @@ export default function Home() {
 
     setLoading(true);
     try {
-      await contract?.createBatch([m, m, m, m, m, m, m, m, m, m]);
-      // const tx = await contract?.claimTo(address, 1);
-      // console.log(`tx: ${tx}`);
+      // await contract?.createBatch([m, m, m, m, m, m, m, m, m, m]);
+      const tx = await contract?.claimTo(address, 1);
+      console.log(`tx: ${tx}`);
     } catch (err) {
       console.log(err);
     }
