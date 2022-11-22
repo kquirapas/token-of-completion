@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import {
   ConnectWallet,
@@ -6,7 +5,7 @@ import {
   useContract,
   useContractMetadata,
 } from "@thirdweb-dev/react";
-import { BigNumber } from "ethers";
+
 
 const maxDegrees = 90;
 
