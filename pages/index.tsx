@@ -6,7 +6,7 @@ import {
   useContractMetadata,
 } from "@thirdweb-dev/react";
 
-
+// for wiggle
 const maxDegrees = 90;
 
 export default function Home() {
