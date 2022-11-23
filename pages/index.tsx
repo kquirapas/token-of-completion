@@ -14,7 +14,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const cardRef = useRef<HTMLImageElement>(null);
   const { contract } = useContract(
-    "0x1f356a9bC08dB319C28863Bc3976bCb14F4f90F4",
+    "0x322E3B923416387bf2409422dC589584Ae8060C9",
     "signature-drop"
   );
   const { data: metadata } = useContractMetadata(contract);
