@@ -28,18 +28,33 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Heroes Uprising, NFT, Community Pass, HUVERSE, heroesuprising, minting"
         />
         {/* Facebook */}
-        <meta property="og:url" content="https://token-of-completion.vercel.app/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Web3 Champion Reward Certificate"/>
-        <meta property="og:description" content="Mint your free Web3 Champion NFT for completing the workshop/training activity."/>
-        <meta property="og:image" content="/preview.png"/>
+        <meta
+          property="og:url"
+          content="https://token-of-completion.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Web3 Champion Reward Certificate" />
+        <meta
+          property="og:description"
+          content="Mint your free Web3 Champion NFT for completing the workshop/training activity."
+        />
+        <meta property="og:image" content="/preview.png" />
         {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:domain" content="https://token-of-completion.vercel.app/"/>
-        <meta property="twitter:url" content="https://token-of-completion.vercel.app/"/>
-        <meta name="twitter:title" content="Web3 Champion Reward Certificate"/>
-        <meta name="twitter:description" content="Mint your free Web3 Champion NFT for completing the workshop/training activity."/>
-        <meta name="twitter:image" content="/preview.png"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="https://token-of-completion.vercel.app/"
+        />
+        <meta
+          property="twitter:url"
+          content="https://token-of-completion.vercel.app/"
+        />
+        <meta name="twitter:title" content="Web3 Champion Reward Certificate" />
+        <meta
+          name="twitter:description"
+          content="Mint your free Web3 Champion NFT for completing the workshop/training activity."
+        />
+        <meta name="twitter:image" content="/preview.png" />
       </Head>
       <Component {...pageProps} />
     </ThirdwebProvider>
